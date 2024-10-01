@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<!-- Header -->
+<header class="bg-primary text-white text-center py-3">
+    <h1>Bem-vindo ao Mundo do Sonic</h1>
+    <div class="badge badge-danger">Inimigo: Robotnik</div>
+</header>
+
+<!-- Body -->
+<div class="container mt-4">
+    <section>
+        <h2>Aventuras do Sonic</h2>
+        <p>Explore as aventuras do ouriço azul e sua luta contra o malvado Robotnik!</p>
+        <script>
+
+            $(document).ready(function (){
+                $("p").click(function (){
+                    $(this).hide();
+                });
+            });
+
+        </script>
+    </section>
+
+    <section>
+        <h2>Personagens</h2>
+        <ul>
+            <li>Sonic</li>
+            <li>Tails</li>
+            <li>Knuckles</li>
+            <li>Robotnik</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Jogos</h2>
+        <p>Confira os jogos mais icônicos do Sonic!</p>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Sonic the Hedgehog</h4>
+                <p>O clássico que começou tudo!</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Sonic Adventure</h4>
+                <p>Uma nova era em 3D!</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Sonic Mania</h4>
+                <p>Uma homenagem aos jogos antigos!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paginação -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+    <body>
+    <div> </div>
+        <!-- Container Fluido -->
+        <div class="container-fluid bg-primary text-white fw-bold text-center p-5">
+            <h1>Sonic - O Ouriço Azul!</h1>
+            <p>Bem-vindo ao site temático do Sonic, onde a velocidade é tudo!</p>
+        </div>
+    
+        <!-- Container com Borda -->
+        <div class="container border border-warning fw-normal mt-4 p-4">
+            <h2>Aventuras do Sonic</h2>
+            <p>Sonic e seus amigos vivem aventuras incríveis, sempre correndo para salvar o dia.</p>
+        </div>
+    
+        <!-- Container com Cor -->
+        <div class="container bg-danger text-white fw-bolder mt-4 p-4 rounded">
+            <h2>Knuckles: O Guardião da Esmeralda Mestre</h2>
+            <p>Knuckles protege a esmeralda mestre na Angel Island com determinação e força.</p>
+        </div>
+    
+        <!-- Container com Linha -->
+        <div class="container border-bottom text-warning fw-light mt-4 p-4">
+            <h2>Tails: O Amigo Fiel</h2>
+            <p>Tails é o melhor amigo de Sonic, sempre pronto para ajudar com sua inteligência e habilidades de voo.</p>
+        </div>
+    
+        <!-- Botões representando estágios do Sonic -->
+        <div class="mt-4">
+            <h3>Escolha um Estágio:</h3>
+            <a href="#" class="btn btn-success">Green Hill Zone</a>
+            <a href="#" class="btn btn-warning">Chemical Plant Zone</a>
+            <a href="#" class="btn btn-info">Emerald Hill Zone</a>
+            <a href="#" class="btn btn-danger">Casino Night Zone</a>
+            <a href="#" class="btn btn-dark">Ice Cap Zone</a>
+            <a href="#" class="btn btn-primary">Launch Base Zone</a>
+            <a href="#" class="btn btn-light">Sky Sanctuary Zone</a>
+        </div>
+
+<!-- Botões adicionais com diferentes estilos -->
+<div class="mt-4">
+    <h3>Mais Botões de Estágios:</h3>
+    <a href="#" class="btn btn-outline-secondary">Botão Claro (Desativado)</a>
+    <a href="#" class="btn btn-outline-dark">Botão Escuro</a>
+    <a href="#" class="btn btn-primary btn-lg">Botão Grande</a>
+    <a href="#" class="btn btn-primary btn-sm">Botão Pequeno</a>
+    <a href="#" class="btn btn-primary btn-block">Botão Largura Total</a>
+    <a href="#" class="btn btn-success active">Botão Ativo</a>
+    <a href="#" class="btn btn-danger spin">Botão Giratório</a>
+</div>
+
+<!-- Botão com ícone giratório -->
+<div class="container mt-4 text-center">
+    <h3>Botão Giratório (Simulado)</h3>
+    <a href="#" class="btn btn-danger">
+        <i class="bi bi-arrow-repeat"></i> Girar
+    </a>
+</div>
+
+<div class="container mt-4 text-center">
+    <h3>Botão com Spinner</h3>
+    <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Carregando...
+    </button>
+</div>
+
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Esmeraldas do Caos</h2>
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="table-primary text-center">
+                    <tr>
+                        <th scope="col">Cor</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Poder</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Verde</td>
+                        <td>A mais conhecida entre as esmeraldas, geralmente associada ao poder central das Esmeraldas do Caos.</td>
+                        <td>Controla o caos e gera energia massiva.</td>
+                    </tr>
+                    <tr>
+                        <td>Azul</td>
+                        <td>Associada à calma e ao controle. Dizem que tem um poder que amplifica habilidades mentais.</td>
+                        <td>Força mental e telecinese.</td>
+                    </tr>
+                    <tr>
+                        <td>Vermelha</td>
+                        <td>Conhecida por seu poder destrutivo, a esmeralda vermelha é símbolo de força bruta.</td>
+                        <td>Aumenta a força física e resistência.</td>
+                    </tr>
+                    <tr>
+                        <td>Amarela</td>
+                        <td>Representa agilidade e velocidade. Tem uma conexão especial com a energia elétrica.</td>
+                        <td>Velocidade extrema e controle de eletricidade.</td>
+                    </tr>
+                    <tr>
+                        <td>Roxa</td>
+                        <td>Esmeralda misteriosa, ligada à manipulação do espaço e da gravidade.</td>
+                        <td>Teletransporte e controle gravitacional.</td>
+                    </tr>
+                    <tr>
+                        <td>Ciano</td>
+                        <td>Representa serenidade e equilíbrio. Dizem que ela é essencial para manter o equilíbrio entre as outras esmeraldas.</td>
+                        <td>Manipulação da energia em estado puro.</td>
+                    </tr>
+                    <tr>
+                        <td>Branca</td>
+                        <td>Esmeralda rara, ligada à sabedoria e ao poder final. Diz-se que ela contém o poder de todas as outras combinadas.</td>
+                        <td>Poder absoluto, capaz de controlar todas as formas de energia.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Imagens dos Personagens do Sonic</h2>
+            <div class="row">
+                <div class="col text-center mb-4">
+                    <img src="we-need-a-new-sonic-anime-just-imagine-an-anime-all-about-v0-cuayd9cxvfsc1.webp" class="img-fluid rounded" alt="Sonic">
+                    <p>Sonic - Canto Arredondado</p>
+                </div>
+                <div class="col text-center mb-4">
+                    <img src="df9jb8r-ab103156-7481-4c13-9364-3efa14b5c898.png" class="img-fluid rounded-circle" alt="Tails">
+                    <p>Tails - Círculo</p>
+                </div>
+                <div class="col text-center mb-4">
+                    <img src="Knuckles-season-2.webp" class="img-fluid img-thumbnail" alt="Knuckles">
+                    <p>Knuckles - Miniatura</p>
+                </div>
+                <div class="col text-center mb-4">
+                    <img src="very cute kwaiii.jpg" class="img-fluid" alt="Amy">
+                    <p>Amy - Responsiva</p>
+                </div>
+                <div class="col text-center mb-4">
+                    <img src="a sombra.webp" class="img-fluid" alt="Shadow">
+                    <p>Shadow - Centralizado</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    
+</body>
+</html>
+
+SELO, PAGINAÇÃO, LISTA COLORIDA, CRIAR 3 cards (header, body, footer)
